@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+/* -----------------------------body------------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+}
+
+body{
+    font-size: 30px;
+    background-color: rgb(41, 48, 45);
+    
+}
+
+img{
+    height: auto;
+    width: 1.6em;
+    border-radius: 10px;
+    margin-left: 36%;
+    display: inline-block;
+}
+
+/* ------------------------Main Section------------------------------------------- */
+
+section{
+    /* border: 2px solid black; */
+    width: 60vw;
+    height: auto;
+    margin:8% auto;
+}
+
+#heading{
+    text-align: center;
+    font-size: 3.5rem;
+    display: inline-block;
+    font-family: 'Acme', sans-serif;
+}
+
+#smsg{
+    margin-top: 2em;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 550;
+    font-family: 'Satisfy', cursive;
+}
+
+.Text{
+    font-weight: bold;
+    font-size:1rem ;
+    white-space: nowrap;
+    padding: 0.5em;
+    color: wheat;
+    position: relative;
+    overflow: hidden;
+}
+
+.Text{
+    animation: animated-text 4s steps(29,end) 1s 1 normal both;
+}
+
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 500px;}
+  }
+
+
+strong{
+    padding: 0.5em;
+    font-size: 2rem;
+    font-family: 'Acme', sans-serif;
+}
+
+
+/* ---------------------------------------Input Box-------------------------------------------------------- */
+#inp{
+    outline: none;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    padding: 0.5em;
+    margin: 2em;
+    font-size: 1.5rem;
+    font-family: 'Acme', sans-serif;
+    background: none;
+}
+
+.email{
+    border: none;
+    background-color: whitesmoke;
+    color: rgb(63, 60, 60);
+    font-family: 'Acme', sans-serif;
+    font-size: 1.5rem;
+    padding: 10px;
+    display: inline-block;
+    margin: 50px auto;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.email:hover,div:hover{
+    cursor: pointer;
+    background-color: rgb(156, 148, 146);
+    color: whitesmoke;
+}
+
+footer{
+    border-top: .5px solid rgb(121, 109, 109);
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(255, 162, 162);
+    margin-top: 15%;
+    font-family: 'Acme', sans-serif;
+    padding: 30px;
+    height: auto;
+}
+
+.fa {
+    padding: .5em;
+    margin-top: 1em;
+    width: 30px;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .fa:hover{
+      color:rgb(161, 155, 155);
+  }
+  
+
+/* -------------------------------------------media queries------------------------------------------ */
+
+@media screen and (min-width:360px)  and (max-width:700px) {
+    body{
+        font-size: 25px;
+    }
+    section{
+        width: 100%;
+        height: auto;
+        margin-left: 3vw;
+    }
+    #smsg{
+        font-size: 1.3rem;
+        padding: 8%;
+    }
+    .Text{
+        font-size: .8rem;
+    }
+    strong{
+        font-size: 1.3rem;
+    }
+    #heading{
+        font-size: 2rem;
+    }
+    img{
+        width:1.3em;
+    }
+}
+
+
+
+@media screen and (min-width:200px)  and (max-width:359px) {
+    
+    section{
+        width: 100%;
+        height: auto;
+    }
+    body{
+        font-size: 25px;
+    }
+    #smsg{
+        font-size: 1.2rem;
+        padding: 8%;
+    }
+    .Text{
+        font-size: .7rem;
+    }
+    strong{
+        padding: 0.5em;
+        font-size: 1.5rem;
+    }
+
+    #inp{
+        margin: 1rem;
+        font-size: 1.2rem;
+    }
+}
+
